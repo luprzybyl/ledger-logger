@@ -39,7 +39,7 @@ func main() {
 	logLine := fmt.Sprintf("%s %s %s\n", dateStr, timeStr, message)
 
 	// Get log directory from env variable, default to current directory
-	dir := os.Getenv("LEDGER_=LOGGER_DIR")
+	dir := os.Getenv("LEDGER_LOGGER_DIR")
 	if strings.TrimSpace(dir) == "" {
 		dir = "."
 	}
